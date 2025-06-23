@@ -96,7 +96,8 @@
 15. **Fix Terraform Format Error in GHA**  
     - The initial GHA run failed due to code formatting.  
     - Fixed locally by running:  
-      ```terraform fmt
+      ```bash
+      terraform fmt
       ```  
     - Committed and pushed the formatted code again.
 
@@ -109,6 +110,4 @@
 - `.gitignore` should exclude `.terraform/`, `.tfstate` files, and provider binaries to avoid large file errors.  
 - Using GitHub Actions with AWS requires storing AWS credentials securely as repository secrets and using `aws-actions/configure-aws-credentials` in workflows.
 
----
 
-*This document summarizes the full setup of Terraform AWS infrastructure, remote state management, and CI/CD integration with GitHub Actions.*
