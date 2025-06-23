@@ -30,7 +30,7 @@ resource "random_id" "bucket_suffix" {
 
 #Step 8 and 9
 module "tfstate" {
-  source      = "./modules/tfstate"
+  source = "./modules/tfstate"
   #bucket_name = "cc-tf-state-backend-ci-cd-${random_id.bucket_suffix.hex}"
   bucket_name = "cc-tf-state-backend-ci-cd-9283hf1c"
 }
